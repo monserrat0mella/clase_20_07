@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <title>Primera</title>
+  </head>
+  <body>
+  <!--Bibliotecas P5.JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+  <!--script P5.JS-->
+  <script>
+      var w = windowWidth-10, h = 380;
+      
+   function setup(){
+    var w = windowWidth-10, h = 380;
+    var canvas = createCanvas(w,h);
+  }
+  function draw(){
+    background(255,232,220);
+    
+     //text1
+      fill(0,100,255);
+      textSize(15);
+      text("Turquía 7,52 kg",280,100);
+      
+      //text2
+      fill(0,100,255);
+      textSize(15);
+      text("Marruecos 4,34 kg",280,200);
+       
+      //text3
+      fill(0,100,255);
+      textSize(15);
+      text("Irlanda 3,22 kg",280,300);
+      
+   
+
+
+      noStroke();
+      fill(255,95,75);
+      ellipse(200,200,70,70);
+      
+      
+      fill(232,50,43);
+      ellipse(200,100,70,70);
+
+      
+      fill(232,137,76);
+      ellipse(200,300,70,70);
+       
+      fill(0,0,0);
+      ellipse(mouseX,mouseY,16,16);
+  }    
+  </script>
+  </body>
+</html>
+
